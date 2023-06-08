@@ -20,7 +20,6 @@ export function useLocale() {
 	const getLocale = computed(
 		() => localStorage.getItem("locale") ?? LOCALE.EN_US
 	);
-	const getShowLocalePicker = computed(() => localeStore.getShowPicker);
 
 	// Switching the language will change the locale of useI18n
 	// And submit to configuration modification
@@ -49,7 +48,6 @@ export function useLocale() {
 
 	return {
 		getLocale,
-		getShowLocalePicker,
 		changeLocale,
 	};
 }

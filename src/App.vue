@@ -27,7 +27,6 @@ async function toggleLocale() {
 		getLocaleText.value == localeList[0].text ? LOCALE.EN_US : LOCALE.ZH_CN;
 	await changeLocale(lang);
 	selectedKeys.value = [lang];
-	location.reload();
 }
 </script>
 
